@@ -1,0 +1,205 @@
+@font: Roboto Slab, san-serif;
+@font-sm: 15px;
+@font-btn: 19px;
+@font-big-btn: 30px;
+@font-heading: 38px;
+@color-l-blue: #263d74;
+@color-big-btn: #d1d6e2;
+@color-white: #FFFFFF;
+@color-packege: #ebebeb;
+@color-black: #111111;
+
+
+.container-fluid{
+    font-family: @font;
+   }
+
+.container{
+    margin: auto;
+}
+
+h2{
+    font-size: @font-heading;
+    margin: 80px 0 23px 0;
+    text-align: center;
+    
+    @media only screen and (max-width: 400px) {
+        font-size: @font-big-btn;
+    }
+    
+}
+
+.package{
+    background-color: @color-l-blue;
+    .container{
+       max-width: 1170px;
+        padding: 0 30px 0 30px;
+                     
+        p, h2{
+            color: @color-packege;
+             }
+       
+        p{
+            font-size: @font-btn;
+            text-align: center;
+            margin: 32px 0 74px 0;
+            
+            @media only screen and (max-width: 320px) {
+        font-size: @font-sm;
+    }
+             @media only screen and (max-width: 1000px){
+                 margin-bottom: 40px;}
+            }
+        
+        hr
+            {
+            text-align: center;
+            width: 410px;
+            height: 2px;
+            color: #767e8f;
+            z-index: 2;
+                
+            @media only screen and (max-width: 500px) {
+                   width: 200px; 
+                }
+             }       
+       
+         hr:nth-child(3n){
+            width: 120px;
+            height: 4px;
+            color:#eaeaea;
+            z-index: 1;
+            transform: translateY(-23px);
+            }
+        
+        a{
+            color: @color-l-blue;
+            font-size:  @font-big-btn;
+            margin: 0 30px 90px 30px;
+            text-align: center;
+            
+            @media only screen and (max-width: 600px){
+                font-size:  @font-btn;
+            }
+              @media only screen and (max-width: 1000px){          
+                margin: 0 0 20px 00;
+                    }
+            @media only screen and (max-width: 320px){
+                font-size:  @font-sm;
+            }            
+            }
+        
+        .right{
+            margin-left: 0;
+        }
+        
+        
+        .btn-lg{
+            border-radius: 0;
+            background-color: @color-big-btn;
+            @height:110px;
+            height: @height;
+            line-height: @height;
+            padding: 0;
+                
+            @media only screen and (max-width: 400px){
+            @height:60px;
+            height: @height;
+            line-height: @height;
+            padding: 0;
+            }                
+            
+   }
+}
+}
+
+
+.service{
+    background-color: @color-white;
+    
+    .container{
+        max-width: 1170px;
+        .container{ 
+     h2{
+        color: @color-l-blue;
+        margin: 117px 0 23px 0;
+            
+            @media only screen and (max-width: 1000px){
+            margin-top: 60px;
+            }         
+            }
+    
+        hr{
+            text-align: center;
+            width: 410px;
+            height: 2px;
+            color: #767e8f;
+            z-index: 2;
+            
+            @media only screen and (max-width: 500px) {
+                   width: 200px; 
+                }
+            } 
+        
+        hr:nth-child(3n){
+            width: 120px;
+            height: 4px;
+            color:@color-l-blue;
+            z-index: 1;
+            transform: translateY(-23px);
+            }
+    
+        p{
+            font-size: @font-sm;
+            margin-bottom: 60px;
+            margin-top: 60px;
+            color: @color-black;
+            font-weight: 300;
+            text-align: center;
+            
+            @media only screen and (max-width: 8000px){
+            margin-top: 40px;
+            }         
+                
+            }
+    
+        a{
+            color: 767e8f;
+            font-size: @font-btn;
+            font-weight: 400;
+            margin: 0 140px 105px 140px;
+            text-align: center;
+            
+            @media only screen and (max-width: 400px){
+                font-size:  @font-sm;   } 
+            
+            
+            @media only screen and (max-width: 1100px){
+                font-size:  @font-sm;
+            margin: 0 100px 105px 100px; 
+                
+            }
+            
+            
+            @media only screen and (max-width: 990px){
+            margin: 0 0 60px 0;
+             font-size: @font-btn;   
+                }     
+             }
+        
+        .btn-sm{
+            border-radius: 0;
+            background-color: @color-l-blue;
+            @height: 48px;
+           height: @height;
+            }
+                
+        
+        }
+    }
+}
+
+
+
+      
+
